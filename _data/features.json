@@ -1,0 +1,11 @@
+[
+	{
+		"category": "Text",
+		"items": [
+			{
+				"name": "StringFetcher",
+				"section_id": "#text_stringfetcher"
+			}
+		]
+	}
+]

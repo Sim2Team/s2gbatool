@@ -1,0 +1,127 @@
+/*
+*   This file is part of S2GBATool
+*   Copyright (C) 2021 Sim2Team
+*
+*   This program is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*
+*   Additional Terms 7.b and 7.c of GPLv3 apply to this file:
+*       * Requiring preservation of specified reasonable legal notices or
+*         author attributions in that material or in the Appropriate Legal
+*         Notices displayed by works containing it.
+*       * Prohibiting misrepresentation of the origin of that material,
+*         or requiring that modified versions of such material be marked in
+*         reasonable ways as different from the original version.
+*/
+
+/* Hide the content. */
+.hide { display: none; }
+
+/* Needed for the footer to stay on bottom. */
+html, body {
+	height: 100%;
+}
+
+.defaultcenter {
+	text-align: center;
+}
+
+
+/* Main body color and text-aligned handle. */
+body {
+	background-color: $main-bg-color;
+	text-align: left;
+	color: $card-top-color;
+
+	/* These are needed for the footer to stay on the bottom as well. */
+	display: flex;
+	flex-direction: column;
+}
+
+/* Also needed for the footer to stay on bottom. */
+.content {
+	flex: 1 0 auto;
+}
+
+/* The title from a menu card. Containing a small border to make it look nicer or so. */
+.card-title-bar {
+	background-color: $card-title-bar-color;
+	border-width: 5px;
+	color: $card-top-color;
+	text-align: center;
+}
+
+/* The card color. */
+.card-clr {
+	background-color: $card-color;
+}
+
+/* The MAIN card width, transparency to not show weird white colors and the margin. */
+.card-main {
+	width: 96%;
+	background-color: transparent;
+	margin-left: 2%;
+	color: $card-top-color;
+	border-width: 4px;
+}
+
+/* The footer part. */
+footer {
+	background-color: $footer-color;
+	color: $footer-text-color;
+}
+
+/* Make the navigation bars full width. */
+.navigation-bar {
+	width: 100%;
+	background-color: $navbar-color;
+	text-align: center;
+}
+
+/* Color of the navigation bar text. */
+.navigation-bar-text {
+	color: $navbar-text-color;
+}
+
+/* Link colors. */
+a {
+	color: $link-color;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+
+/* The button style. */
+button {
+	background-color: $button-color;
+	color: $button-text-color;
+	border-radius: 10%;
+	border-width: 3px;
+}
+
+/* Overwrite the form-control focus, because it'll show the box white otherwise which breaks the style. */
+.form-control {
+	&:disabled,
+	&:focus {
+		border-color: $main-bg-color;
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+		background-color: transparent;
+		color: $button-text-color;
+	}
+}
+
+input, span, select, .select-style {
+	background-color: $button-color;
+	color: $button-text-color;
+}

@@ -1,0 +1,21 @@
+<!-- HTML include for assets/js/tools/stringfetcher.js. -->
+<div class="mb-3" id="text_stringfetcher">
+	<h2 class="fw-bold">StringFetcher</h2>
+
+	<!-- Language Selector + String ID Input field. -->
+	<select id="string-fetcher-lang-selector">
+		<option value="0" selected>English</option>
+		<option value="1">Dutch</option>
+		<option value="2">French</option>
+		<option value="3">German</option>
+		<option value="4">Italian</option>
+		<option value="5">Spanish</option>
+	</select>
+
+	<input id="string-fetcher-string-id" type="number" value="0" min="0" max="3461">
+	<!-- The result of the fetcher. -->
+	<button id="string-fetcher-fetch">Fetch String</button>
+	<div class="mb-3 fw-bold">Fetched String: <span id="string-fetcher-fetched"></span></div>
+
+	<button id="string-fetcher-extract-all">Extract all Strings</button>
+</div>

@@ -1,0 +1,25 @@
+<!-- The "Features" card on the sidebar. -->
+<div>
+	<div class="card card-main mb-3">
+		<div class="card-header card-title-bar">
+			<h3 class="card-title">Features</h3>
+		</div>
+
+		<!-- Loop through all the categories from _data/features.json and show the categories + items inside it. -->
+		<div class="card-body card-clr">
+			{% for category in site.data["features"] %}
+				<details class="mb-3">
+					<summary class="fw-bold">{{ category.category }}</summary>
+
+					<ul>
+						{% for item in category.items %}
+							<li>
+								<a href="{{ item.section_id | absolute_url }}">{{ item.name }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</details>
+			{% endfor %}
+		</div>
+	</div>
+</div>
